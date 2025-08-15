@@ -1,0 +1,34 @@
+ .timeline-container::-webkit-scrollbar {
+        display: none;
+      }
+      .timeline-container {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .timeline-dot {
+        box-shadow: 0 0 0 4px white, 0 0 0 6px #e5e7eb;
+      }
+      .timeline-dot.active {
+        box-shadow: 0 0 0 4px white, 0 0 0 6px #00FF93, 0 0 20px rgba(0, 255, 147, 0.3);
+      }
+      
+      .content-box.visible {
+        background: rgba(248, 249, 251, 0.1);
+        border: 1px solid #00ff9591;
+      }
+
+      .highlighted-box-timeline .inside-shadow {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 85%;
+  height: 20%;
+  transform: translateX(-50%);
+    box-shadow: 
+    0 0px 120px  rgba(0, 255, 147, 1),   
+   -0px -0px 0px rgba(0, 255, 147, 0.1),
+    0px -0px 0px rgba(0, 255, 147, 0.1), 
+    0px 20px 20px #080808; 
+    z-index: -2;  
+
+}

@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Matrix background - removed global fixed positioning */
+
+
+
+.matrix-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+canvas#Matrix {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+
+
+
+.hero-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.coming-soon-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+ font-size: 4rem;
+  color: #00FF93;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  z-index: 30;
+}
+
+.hero-buttons .btn {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  background-color: #00ff00;
+  color: black;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Continuous content sections */
+.content-section {
+  /* background-color: #f5f5f5; */
+  color: black;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.business h2 {
+  align-items: center;
+}
+
+.app {
+  /* font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  background-color: #D3D3D3;
+}
+
+.section {
+  padding: 60px 0;
+  
+}
+
+/* Bootstrap Container and Row fixes */
+.content-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+}
+
+.content-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.content-section .col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom styles for React Bootstrap cards */
+.card {
+  background-color: rgba(255, 255, 255, 255) !important;
+  /* border: 1px solid #00ff00 !important; */
+  color: white !important;
+  /* transition: all 0.3s ease; */
+  backdrop-filter: blur(10px);
+  height: 100%;
+  box-shadow: '0 4px 20px rgba(0,0,0,0.1)';
+}
+
+/* .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 0, 0.3) !important;
+  border-color: #00ff00 !important;
+} */
+
+.card-title {
+  color: black!important;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.card-text {
+  color: grey !important;
+  line-height: 1.6;
+}
+
+.progress-bar {
+  background-color: black !important;
+  align-items: center;
+}
+
+.text-muted {
+  color: #888888 !important;
+}
+
+/* Responsive adjustments for cards */
+@media (max-width: 768px) {
+  .hero-image {
+    width: 100%;
+    height: 6000px;
+  }
+  
+  .hero-content {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .main-section .container {
+    flex-direction: column;
+  }
+  
+  .content-section .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    
+  }
+}
+
+
+body {
+  background-color: #D3D3D3;
+  color: #000;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+
+
+.table {
+  color: #fff;
+  border-color: #333;
+}
+
+.my-5 h3 {
+  color: black;
+  text-align: left;
+  margin-top: 0px;
+  font-size: 2rem;
+
+}
+
+#cal-embed {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+
