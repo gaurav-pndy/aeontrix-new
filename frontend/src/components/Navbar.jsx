@@ -125,7 +125,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ type: "tween", duration: 0.12 }}
-                  className="absolute overflow-hidden top-full mt-1 left-[50%] translate-x-[-50%] bg-[#0F1114] border border-white/10 rounded-lg shadow-[#00FF93]/10 shadow  w-56 z-50"
+                  className="absolute overflow-hidden top-full mt-1 dropdown-div bg-[#0F1114] border border-white/10 rounded-lg shadow-[#00FF93]/10 shadow  w-56 z-50"
                 >
                   {solutions.map((item) => (
                     <Link to={`/solutions/${item.id}`} key={item.id}>
@@ -160,7 +160,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ type: "tween", duration: 0.12 }}
-                  className="absolute overflow-hidden top-full mt-1 left-[50%] translate-x-[-50%] bg-[#0F1114] border border-white/10 rounded-lg shadow-[#00FF93]/10 shadow  w-56 z-50"
+                  className="absolute overflow-hidden top-full mt-1 dropdown-div  bg-[#0F1114] border border-white/10 rounded-lg shadow-[#00FF93]/10 shadow  w-56 z-50"
                 >
                   {industries.map((item) => (
                     <Link to={`/industries/${item.id}`} key={item.id}>
@@ -204,7 +204,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="absolute rounded-3xl top-17 left-[50%] translate-x-[-50%] w-[98vw] md:max-w-[90vw] mx-auto  bg-[#042222] text-[#F8F9FB] shadow-md py-4 flex flex-col items-center space-y-6 text-lg xl:hidden z-50"
+            className="absolute rounded-3xl  top-[110%] dropdown-div w-[98vw] md:max-w-[90vw] mx-auto  bg-[#042222] text-[#F8F9FB] shadow-md py-4 flex flex-col items-center space-y-6 text-lg xl:hidden z-50"
           >
             <div
               onClick={() => {

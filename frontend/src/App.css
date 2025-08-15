@@ -23,7 +23,10 @@ canvas#Matrix {
   background-color: transparent;
 }
 
-
+.dropdown-div{
+  left: 50%;
+  transform: translateX(-50%) !important;
+}
 
 
 .hero-image {
